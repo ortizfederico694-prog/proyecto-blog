@@ -3,29 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="/css/stylefede.css">
+    <title>Login | NEXUSSTORE</title>
 </head>
-<body>
-  
-     <header> 
+<body class="bg-secondary">
+    <header> 
     <nav class="navbar navbar-expand-lg bg-secondary">
   <div class="container-fluid">
-    <a class="navbar-brand text-light fw-bolder " href="#">NEXUSSTORE🎮</a>
+    <a class="navbar-brand text-light fw-bolder " href="principal.html">NEXUSSTORE🎮</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-     
+
         <li class="nav-item">
-          <a class="nav-link text-light fw-bolder" href="principal.html">INICIAR SESION</a>
+          <a class="nav-link text-light fw-bolder" href="principal.html">LOGIN</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-light fw-bolder" href="#">COMUNIDAD</a>
-          <li class="nav-item">
+        </li>
+        <li class="nav-item">
           <a class="nav-link text-light fw-bolder" href="#">ACERCA DE NOSOTROS</a>
-        
+        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-light fw-bolder" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             CATEGORIAS
@@ -39,22 +42,77 @@
               <li><hr class="dropdown-divider"></li>
           </ul>
         </li>
-        
-          
-        
-         
-          
       </ul>
-        
-     
-       <button type="button" class="bg-secondary text-light fw-bolder" data-bs-toggle="modal"  data-bs-target="#exampleModal">
+
+      <button type="button" class="bg-secondary text-light fw-bolder" data-bs-toggle="modal"  data-bs-target="#exampleModal">
   Suscripcion
 </button>
       
     </div>
   </div>
 </nav>
-<!-- Modal Suscripcion -->
+ </header>
+
+ <main>
+  <div class="container py-5">
+    <div class="row justify-content-center align-items-center g-5">
+
+      <div class="col-12 col-lg-6">
+        <h1 class="text-light fw-bolder">Iniciar sesion</h1>
+        <p class="text-light">Ingresa a la administracion de NEXUSSTORE🎮</p>
+
+        <form action="principal.html" method="get">
+          <div class="mb-3">
+            <label for="gmailLogin" class="form-label text-light">Gmail</label>
+
+            <input 
+              type="email" 
+              class="form-control" 
+              id="gmailLogin"
+              placeholder="ejemplo@gmail.com"
+              required>
+          </div>
+
+          <div class="mb-3">
+            <label for="passwordLogin" class="form-label text-light">Contraseña</label>
+
+            <input 
+              type="password" 
+              class="form-control" 
+              id="passwordLogin"
+              placeholder="Ingresá tu contraseña"
+              required>
+          </div>
+
+          <div class="form-check mb-4">
+            <input 
+              class="form-check-input" 
+              type="checkbox" 
+              value="1" 
+              id="recordarSesion">
+            <label class="form-check-label text-light" for="recordarSesion">Recordar mi sesion</label>
+          </div>
+
+          <button 
+            type="submit" 
+            class="btn btn-light fw-bolder w-100 mb-3">
+            Ingresar
+          </button>
+        </form>
+      </div>
+
+      <div class="col-12 col-lg-6">
+        <img 
+          src="https://picsum.photos/seed/nexusstore/900/600" 
+          class="img-fluid rounded" 
+          alt="Imagen decorativa de NEXUSSTORE">
+      </div>
+
+    </div>
+  </div>
+ </main>
+
+ <!-- Modal Suscripcion -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content bg-secondary text-light">
@@ -78,12 +136,12 @@
           </div>
 
           <div class="mb-3">
-            <label for="gmail" class="form-label">Gmail</label>
+            <label for="gmailSuscripcion" class="form-label">Gmail</label>
 
             <input 
               type="email" 
               class="form-control" 
-              id="gmail"
+              id="gmailSuscripcion"
               placeholder="ejemplo@gmail.com"
               required>
           </div>
@@ -187,15 +245,8 @@
     </div>
   </div>
 </div>
- </header>
-
-
-
-
-hola
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+   
 </body>
 </html>
