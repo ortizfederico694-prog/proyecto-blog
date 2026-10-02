@@ -20,9 +20,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-        <li class="nav-item">
-          <a class="nav-link text-light fw-bolder" href="formulario.html">LOGIN</a>
-        </li>
+        
         <li class="nav-item">
           <a class="nav-link text-light fw-bolder" href="#">COMUNIDAD</a>
         </li>
@@ -61,7 +59,7 @@
         <h1 class="text-light fw-bolder">Iniciar sesion</h1>
         <p class="text-light">Ingresa a la administracion de NEXUSSTORE🎮</p>
 
-        <form action="formulario.html" method="get">
+        
           <div class="mb-3">
             <label for="gmailLogin" class="form-label text-light">Gmail</label>
 
@@ -92,18 +90,17 @@
               id="recordarSesion">
             <label class="form-check-label text-light" for="recordarSesion">Recordar mi sesion</label>
           </div>
+      <a 
+          href="paginaprincipal.html" 
+         class="btn btn-light fw-bolder w-100 mb-3">
+          Ingresar
+          </a>
 
-          <button 
-            type="submit" 
-            class="btn btn-light fw-bolder w-100 mb-3">
-            Ingresar
-          </button>
-        </form>
       </div>
 
       <div class="col-12 col-lg-6">
         <img 
-          src="https://picsum.photos/seed/nexusstore/900/600" 
+          src="https://images.pexels.com/photos/9072216/pexels-photo-9072216.jpeg" 
           class="img-fluid rounded" 
           alt="Imagen decorativa de NEXUSSTORE">
       </div>
@@ -111,141 +108,10 @@
     </div>
   </div>
  </main>
-
- <!-- Modal Suscripcion -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content bg-secondary text-light">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Suscribite a NEXUSSTORE</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-
-      <form action="#" method="post">
-        <div class="modal-body">
-
-          <div class="mb-3">
-            <label for="nombreSuscripcion" class="form-label">Nombre</label>
-
-            <input
-              type="text"
-              class="form-control"
-              id="nombreSuscripcion"
-              placeholder="Ingresá tu nombre"
-              required>
-          </div>
-
-          <div class="mb-3">
-            <label for="gmailSuscripcion" class="form-label">Gmail</label>
-
-            <input 
-              type="email" 
-              class="form-control" 
-              id="gmailSuscripcion"
-              placeholder="ejemplo@gmail.com"
-              required>
-          </div>
-
-          <hr class="border-light border-opacity-25 my-4">
-
-          <h2 class="fs-6 fw-bolder">Datos de la tarjeta</h2>
-          <p class="small">Necesitamos estos datos para cobrar la suscripcion premium.</p>
-
-          <div class="mb-3">
-            <label for="nombreTarjeta" class="form-label">Nombre en la tarjeta</label>
-
-            <input 
-              type="text" 
-              class="form-control" 
-              id="nombreTarjeta"
-              placeholder="Como figura en la tarjeta"
-              required>
-          </div>
-
-          <div class="mb-3">
-            <label for="numeroTarjeta" class="form-label">Numero de tarjeta</label>
-
-            <input 
-              type="text" 
-              class="form-control" 
-              id="numeroTarjeta"
-              inputmode="numeric"
-              pattern="[0-9 ]{15,19}"
-              placeholder="0000 0000 0000 0000"
-              required>
-          </div>
-
-          <div class="row g-3">
-            <div class="col-6 col-md-4">
-              <label for="vencimiento" class="form-label">Vencimiento</label>
-
-              <input 
-                type="text" 
-                class="form-control" 
-                id="vencimiento"
-                inputmode="numeric"
-                pattern="[0-9]{2}/[0-9]{2}"
-                placeholder="MM/AA"
-                required>
-            </div>
-
-            <div class="col-6 col-md-4">
-              <label for="cvc" class="form-label">CVC</label>
-
-              <input 
-                type="text" 
-                class="form-control" 
-                id="cvc"
-                inputmode="numeric"
-                pattern="[0-9]{3,4}"
-                maxlength="4"
-                placeholder="123"
-                required>
-            </div>
-
-            <div class="col-12 col-md-4">
-              <label for="plan" class="form-label">Plan</label>
-
-              <select class="form-select" id="plan">
-                <option selected>Mensual</option>
-                <option>Trimestral</option>
-                <option>Anual</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="form-check mt-3">
-            <input 
-              class="form-check-input" 
-              type="checkbox" 
-              value="1" 
-              id="aceptoSuscripcion">
-            <label class="form-check-label" for="aceptoSuscripcion">Acepto recibir notificaciones por email.</label>
-          </div>
-
-        </div>
-
-        <div class="modal-footer">
-
-          <button 
-            type="button" 
-            class="btn btn-outline-light" 
-            data-bs-dismiss="modal">
-            Cancelar
-          </button>
-
-          <button 
-            type="submit" 
-            class="btn btn-light fw-bolder">
-            Suscribirme
-          </button>
-
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-
+       
+          
+          
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
    
 </body>
