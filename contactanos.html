@@ -3,29 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-      <link rel="stylesheet" href="css/stylefede.css">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="css/stylefede.css">
+    <title>Contactanos | NEXUSSTORE</title>
 </head>
-<body>
-  
-     <header> 
+<body class="text-light fondo-imagen">
+    <header> 
     <nav class="navbar navbar-expand-lg bg-secondary">
   <div class="container-fluid">
-    <a class="navbar-brand text-light fw-bolder " href="#">NEXUSSTORE🎮</a>
+    <a class="navbar-brand text-light fw-bolder " href="index.html">NEXUSSTORE🎮</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
      
-        <li class="nav-item">
-          <a class="nav-link text-light fw-bolder" href="formulario.html">INICIAR SESION</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-light fw-bolder" href="formulario.html">ACERCA DE NOSOTROS</a>
+     
+      
           <li class="nav-item">
-          <a class="nav-link text-light fw-bolder" href="formulario.html">CONTACTANOS</a>
+          <a class="nav-link text-light fw-bolder" href="#">ACERCA DE NOSOTROS</a>
+          <li class="nav-item">
+          <a class="nav-link text-light fw-bolder" href="contactanos.html" aria-current="page">CONTACTANOS</a>
         
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-light fw-bolder" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -55,7 +55,6 @@
     </div>
   </div>
 </nav>
-<img class="img1" src="https://images.pexels.com/photos/30393929/pexels-photo-30393929.jpeg" alt="">
 <!-- Modal Suscripcion -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -189,15 +188,120 @@
     </div>
   </div>
 </div>
- </header>
+  </header>
 
+ <main class="container py-5">
 
+  <h1 class="fw-bolder">Contactanos</h1>
+  <p class="mb-5">Escribinos tu consulta y te respondemos a la brevedad.</p>
 
+  <div class="row g-5">
 
+    <div class="col-12 col-lg-7">
+
+      <h2 class="fs-4 fw-bolder mb-3">Envianos tu consulta</h2>
+
+      <div class="bg-secondary p-4 rounded mb-5">
+      <form action="index.html" method="get" class="form-contacto">
+
+        <div class="row g-3">
+
+          <div class="col-12 col-md-6">
+            <label for="nombreContacto" class="form-label">Nombre</label>
+
+            <input 
+              type="text" 
+              class="form-control" 
+              id="nombreContacto"
+              placeholder="Ingresá tu nombre"
+              required>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label for="emailContacto" class="form-label ">Email</label>
+
+            <input 
+              type="email" 
+              class="form-control " 
+               id="emailContacto"
+              placeholder="ejemplo@gmail.com"
+              required>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label for="telefonoContacto" class="form-label">Telefono</label>
+
+            <input 
+              type="tel" 
+              class="form-control" 
+              id="telefonoContacto"
+              inputmode="numeric"
+              placeholder="Ingresá tu telefono">
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label for="asuntoContacto" class="form-label">Asunto</label>
+
+            <select 
+              class="form-select" 
+              id="asuntoContacto">
+              <option selected>Consulta general</option>
+              <option>Problemas con una compra</option>
+              <option>Suscripcion premium</option>
+              <option>Sugerencia para el blog</option>
+              <option>Otro</option>
+            </select>
+          </div>
+
+          <div class="col-12">
+            <label for="mensajeContacto" class="form-label">Mensaje</label>
+
+            <textarea 
+              class="form-control" 
+              id="mensajeContacto" 
+              rows="6"
+              placeholder="Escribí tu consulta acá"
+              required></textarea>
+          </div>
+
+          <div class="col-12">
+            <button 
+              type="submit" 
+              class="btn btn-light fw-bolder px-4">
+              Enviar consulta
+            </button>
+          </div>
+
+        </div>
+      </form>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-5">
+
+      <h2 class="fs-4 fw-bolder mb-3">Donde estamos</h2>
+
+      <p class="mb-3">RollingCode School</p>
+
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.106067949445!2d-65.2097419244597!3d-26.836578490027218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses-419!2sar!4v1790994617929!5m2!1ses-419!2sar" 
+        class="w-100 rounded" 
+        style="height: 400px; border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="strict-origin-when-cross-origin"
+        title="Mapa de la direccion de RollingCode School">
+      </iframe>
+
+    </div>
+
+  </div>
+ </main>
 
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+   
 </body>
 </html>
