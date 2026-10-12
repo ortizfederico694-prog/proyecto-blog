@@ -27,4 +27,50 @@
     min-height: 100vh;
 }
 
+/* --- ESTILOS DEL FOOTER --- */
+
+footer.bg-dark {
+    background-color: #111115 !important; 
+}
+
+.footer-link {
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #00e676 !important;
+    padding-left: 6px;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    background-color: #2b2b36;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icon img {
+    filter: invert(1); 
+    width: 20px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto neón al pasar el mouse por las redes sociales */
+.social-icon:hover {
+    background-color: #ff0055; /* Acento rosa/rojo neón */
+    transform: translateY(-4px); /* Se eleva un poco */
+    box-shadow: 0 5px 15px rgba(255, 0, 85, 0.4); /* Resplandor */
+}
+
+.social-icon:hover img {
+    transform: scale(1.1);
+}
+
+
 
