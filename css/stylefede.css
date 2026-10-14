@@ -28,10 +28,20 @@
     min-height: 100vh;
 }
 
+.nav-link{
+    transition: transform 0.3s ease;
+    color: #ffffff;
+}
+
+.nav-link:hover {
+    transform: scale(1.05); 
+    text-shadow: 0 5px 15px rgba(0, 255, 21, 0.877);
+}
+
 .button{
     border-radius: 20px;
-    transform: scale(1);
-    background-color: #ff0055 ;
+    transition: transform 0.3s ease;
+    background-color: #ff0055;
     color: #ffffff;
 }
 
