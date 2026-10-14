@@ -28,10 +28,20 @@
     min-height: 100vh;
 }
 
+.nav-link{
+    transition: transform 0.3s ease;
+    color: #ffffff;
+}
+
+.nav-link:hover {
+    transform: scale(1.05); 
+    text-shadow: 0 5px 15px rgba(0, 255, 21, 0.877);
+}
+
 .button{
     border-radius: 20px;
-    transform: scale(1);
-    background-color: #ff0055 ;
+    transition: transform 0.3s ease;
+    background-color: #ff0055;
     color: #ffffff;
 }
 
@@ -85,5 +95,24 @@ footer.bg-dark {
     transform: scale(1.1);
 }
 
+.img-nosotros{
+    height: 400px;
+    object-fit: cover;
+}
 
+.profile-img{
+    width: 100% !important;
+    height: 250px !important;
+    object-fit: cover;
+    object-position: top;
+    border-bottom: 2px;
+}
 
+.team-card{
+    transition: all 0.3s ease;
+}
+
+.team-card:hover{
+    box-shadow: 0 5px 15px rgba(94, 255, 0, 0.671); 
+    transform: scale(1.05);
+}
